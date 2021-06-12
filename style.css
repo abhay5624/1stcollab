@@ -1,437 +1,446 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
-:root{
-    --fonts: 'Roboto Mono', monospace;
-    --clr: #0099ff;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+:root {
+  --fonts: "Roboto Mono", monospace;
+  --clr: #0099ff;
+  --hover: rgb(5, 64, 141);
 }
-*{
-    box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  position: absolute;
+  top: 0%;
+  z-index: 99;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 20px;
+}
+header .link {
+  width: 60%;
+  order: 1;
+  margin-top: 10px;
+}
+header .link a {
+  text-decoration: none;
+  font-family: var(--fonts);
+  padding: 59px;
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+}
+header .link a:hover {
+  transform: scale(1);
+  color: var(--hover);
+}
+header .logo {
+  position: absolute;
+  top: 0%;
+  width: 100px;
+  order: 2;
+}
+header .onclass {
+  width: 40%;
+}
+.homeimage {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(100, 188, 247);
+  clip-path: polygon(0 0, 100% 0%, 93% 86%, 0% 100%);
+  display: flex;
+}
+.article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  font-family: var(--fonts);
+  color: white;
+}
+.article .content {
+  width: 90%;
+  text-transform: capitalize;
+  font-size: 40px;
+  text-align: center;
+  margin-left: 10%;
+}
+.medicinesvg {
+  width: 50%;
+}
+.copywrite {
+  background-color: #0099ff;
+  color: white;
+  text-align: center;
+  font-family: var(--fonts);
+  padding: 10px;
+  position: relative;
+  margin: 0%;
+}
+.form {
+  width: 100%;
+  background-image: linear-gradient(
+    to left,
+    #0099ff,
+    #2ca4fe,
+    #47affb,
+    #60b9f9,
+    #77c3f6
+  );
+  display: flex;
 
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
 }
-body{
-    overflow-x: hidden;
+.email {
+  text-align: center;
+  color: white;
 }
-header{
-    position: absolute;
-    top: 0%;
-    z-index: 99;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 20px;
-    
+.contact {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 50px;
+  font-size: 20px;
+  margin-left: 100px;
+  width: 50%;
 }
-header .link{
-    width: 60%;
-   order: 1;
-   margin-top: 10px;
+.formcont {
+  margin: 15px;
 }
-header .link a{
-    text-decoration: none;
-    font-family: var(--fonts);
-    padding: 59px;
-    color: white;
-    font-weight: 600;
-    font-size: 17px;
+.othercontact {
+  width: 50%;
 }
-header .link a:hover{
-    transform: scale(1);
-    color: rgb(5, 64, 141);
-}
-header .logo{
-    position: absolute;
-    top: 0%;
-    width: 100px;
-    order: 2;
-}
-header .onclass{
-    width: 40%;
-}
-.homeimage{
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(100, 188, 247);
-    clip-path: polygon(0 0, 100% 0%, 93% 86%, 0% 100%);
-    display: flex;
-    
-}
-.article{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 50%;
-    font-family: var(--fonts);
-    color: white;
-}
-.article .content{
-    width: 90%;
-    text-transform: capitalize;
-    font-size: 40px;
-    text-align: center;
-    margin-left: 10%;
-}
- .medicinesvg{
-    width: 50%;
-}
-.copywrite{
-    background-color: #0099ff;
-    color: white;
-    text-align: center;
-    font-family: var(--fonts);
-    padding: 10px;
-    position: relative;
-    margin: 0%;
-}
-.form{
-    width: 100%;
-    background-image: linear-gradient(to left, #0099ff, #2ca4fe, #47affb, #60b9f9, #77c3f6);
-   display: flex;
- 
-   justify-content: center;
-   align-items: center;
-   padding: 100px;
-}
-.email{
-    text-align: center;
-    color: white;
-}
-.contact
-{
-    background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 5.0px );
--webkit-backdrop-filter: blur( 5.0px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
- display: flex;
- justify-content: center;
- color: white;
-    padding: 50px;
-    font-size: 20px;
-    margin-left: 100px;
-    width: 50%
-}
-.formcont{
-    margin: 15px;
-}
-.othercontact{
-    width: 50%;
-}
-.input
-{
-    border-radius: 10px;
-    padding: 6px;
-    margin: 3px;
+.input {
+  border-radius: 10px;
+  padding: 6px;
+  margin: 3px;
 }
 
-
-
-
-
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.box
-{
-    flex-direction: column;
+.box {
+  flex-direction: column;
 }
 .box a {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    border-radius: 50%;
-    color: rgb(51, 51, 51);
-    margin: 0.3em;
-    background: rgb(236, 236, 236);
-    position: relative;
-    transition: all 0.4s;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: rgb(51, 51, 51);
+  margin: 0.3em;
+  background: rgb(236, 236, 236);
+  position: relative;
+  transition: all 0.4s;
 }
-.box a:hover{
-    transform: scale(0.9);
+.box a:hover {
+  transform: scale(0.9);
 }
 .box a::before {
-    content: attr(data-type);
-    position: absolute;
-    top: 0%;
-    left: 70px;
-    font-family: cursive;
-    border-radius: 50px;
-    width: 150px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-    color: rgb(51, 51, 51);
-    background: rgb(236, 236, 236);
-    display: none;
+  content: attr(data-type);
+  position: absolute;
+  top: 0%;
+  left: 70px;
+  font-family: cursive;
+  border-radius: 50px;
+  width: 150px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: rgb(51, 51, 51);
+  background: rgb(236, 236, 236);
+  display: none;
 }
 .box a:hover::before {
-    display: flex;
+  display: flex;
 }
-.box a::after{
-    content: "";
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    border-radius: 50px;
-    width: 60px;
-    height: 60px;
-    background: var(--clr);
-    transform: scale(0);
-    transition: all 0.4s;
+.box a::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  background: var(--clr);
+  transform: scale(0);
+  transition: all 0.4s;
 }
-.box a:hover::after{
-    transform: scale(0.8);
+.box a:hover::after {
+  transform: scale(0.8);
 }
 .box a i {
-    z-index: 20;
-    transition: all 0.4s;
+  z-index: 20;
+  transition: all 0.4s;
 }
 .box a:hover i {
-    color: white;
+  color: white;
 }
 
-
-
-
 @keyframes loading {
-    0% {
-      cy: 10;
-    }
-    25% {
-      cy: 3;
-    }
-    50% {
-      cy: 10;
-    }
-  }
-  body {
-    -webkit-font-smoothing: antialiased;
-    background-color: #f4f7ff;
-  }
-  
-  canvas {
-    height: 100vh;
-    pointer-events: none;
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-  }
-  
-  button {
-    background: none;
-    border: none;
-    color: #f4f7ff;
-    cursor: pointer;
-    font-family: "Roboto", Arial;
-    font-size: 14px;
-    font-weight: 500;
-    height: 40px;
-    left: 50%;
-    outline: none;
-    overflow: hidden;
-    padding: 0 10px;
-    transform: translate(-50%, -50%);
-    width: 190px;
-    margin-top: 30px;
-  }
-  button::before {
-    background: #1f2335;
-    border-radius: 50px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4) inset;
-    content: "";
-    display: block;
-    height: 100%;
-    margin: 0 auto;
-    transition: width 0.2s cubic-bezier(0.39, 1.86, 0.64, 1) 0.3s;
-    width: 100%;
-  }
-  
-  button.ready .submitMessage svg {
-    opacity: 1;
-    top: 1px;
-    transition: top 0.4s ease 600ms, opacity 0.3s linear 600ms;
-  }
-  button.ready .submitMessage .button-text span {
-    top: 0;
-    opacity: 1;
-    transition: all 0.2s ease calc(var(--dr) + 600ms);
-  }
-  
-  button.loading::before {
-    transition: width 0.3s ease;
-    width: 80%;
-  }
-  button.loading .loadingMessage {
-    opacity: 1;
-  }
-  button.loading .loadingCircle {
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-name: loading;
+  0% {
     cy: 10;
   }
-  
-  button.complete .submitMessage svg {
-    top: -30px;
-    transition: none;
+  25% {
+    cy: 3;
   }
-  button.complete .submitMessage .button-text span {
-    top: -8px;
-    transition: none;
+  50% {
+    cy: 10;
   }
-  button.complete .loadingMessage {
-    top: 80px;
-  }
-  button.complete .successMessage .button-text span {
-    left: 0;
-    opacity: 1;
-    transition: all 0.2s ease calc(var(--d) + 1000ms);
-  }
-  button.complete .successMessage svg {
-    stroke-dashoffset: 0;
-    transition: stroke-dashoffset 0.3s ease-in-out 1.4s;
-  }
-  
-  .button-text span {
-    opacity: 0;
-    position: relative;
-  }
-  
-  .message {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-  }
-  
-  .message svg {
-    display: inline-block;
-    fill: none;
-    margin-right: 5px;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 2;
-  }
-  
-  .submitMessage .button-text span {
-    top: 8px;
-    transition: all 0.2s ease var(--d);
-  }
-  .submitMessage svg {
-    color: #5c86ff;
-    margin-left: -1px;
-    opacity: 0;
-    position: relative;
-    top: 30px;
-    transition: top 0.4s ease, opacity 0.3s linear;
-    width: 14px;
-  }
-  
-  .loadingMessage {
-    opacity: 0;
-    transition: opacity 0.3s linear 0.3s,
-      top 0.4s cubic-bezier(0.22, 0, 0.41, -0.57);
-  }
-  .loadingMessage svg {
-    fill: #5c86ff;
-    margin: 0;
-    width: 22px;
-  }
-  
-  .successMessage .button-text span {
-    left: 5px;
-    transition: all 0.2s ease var(--dr);
-  }
-  .successMessage svg {
-    color: #5cffa1;
-    stroke-dasharray: 20;
-    stroke-dashoffset: 20;
-    transition: stroke-dashoffset 0.3s ease-in-out;
-    width: 14px;
-  }
-  
-  .loadingCircle:nth-child(2) {
-    animation-delay: 0.1s;
-  }
-  
-  .loadingCircle:nth-child(3) {
-    animation-delay: 0.2s;
-  }
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: #f4f7ff;
+}
 
+canvas {
+  height: 100vh;
+  pointer-events: none;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
 
+button {
+  background: none;
+  border: none;
+  color: #f4f7ff;
+  cursor: pointer;
+  font-family: "Roboto", Arial;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  left: 50%;
+  outline: none;
+  overflow: hidden;
+  padding: 0 10px;
+  transform: translate(-50%, -50%);
+  width: 190px;
+  margin-top: 30px;
+}
+button::before {
+  background: #1f2335;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4) inset;
+  content: "";
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  transition: width 0.2s cubic-bezier(0.39, 1.86, 0.64, 1) 0.3s;
+  width: 100%;
+}
 
-  /*  shivam part   */
+button.ready .submitMessage svg {
+  opacity: 1;
+  top: 1px;
+  transition: top 0.4s ease 600ms, opacity 0.3s linear 600ms;
+}
+button.ready .submitMessage .button-text span {
+  top: 0;
+  opacity: 1;
+  transition: all 0.2s ease calc(var(--dr) + 600ms);
+}
 
+button.loading::before {
+  transition: width 0.3s ease;
+  width: 80%;
+}
+button.loading .loadingMessage {
+  opacity: 1;
+}
+button.loading .loadingCircle {
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: loading;
+  cy: 10;
+}
 
+button.complete .submitMessage svg {
+  top: -30px;
+  transition: none;
+}
+button.complete .submitMessage .button-text span {
+  top: -8px;
+  transition: none;
+}
+button.complete .loadingMessage {
+  top: 80px;
+}
+button.complete .successMessage .button-text span {
+  left: 0;
+  opacity: 1;
+  transition: all 0.2s ease calc(var(--d) + 1000ms);
+}
+button.complete .successMessage svg {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0.3s ease-in-out 1.4s;
+}
 
+.button-text span {
+  opacity: 0;
+  position: relative;
+}
 
-  .grid-cont {
-    margin: 50px;
-    display: grid;
-    grid-template-areas: "photo data";
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    height: 80vh;
-    padding: 2rem;
-  }
-  .photo {
-    grid-area: photo;
-    background: url("image/thomas-kinto-6MsMKWzJWKc-unsplash.jpg"); 
-    background-size: cover;
-    border-top-left-radius: 2rem;
-    border-bottom-left-radius: 2rem;
-  }
-  
-  .data {
-    grid-area: data;
-    display: grid;
-    grid-template-rows: 2fr 1fr;
-  }
-  .photo2 {
-    background: url("image/national-cancer-institute-1c8sj2IO2I4-unsplash.jpg"); /* this will be the mama ki shop photo*/
-    background-size: cover;
-    border-top-right-radius: 2rem;
-  }
-  
-  .info {
-    background: url("image/thomas-kinto-6MsMKWzJWKc-unsplash.jpg"); 
-    background-size: unset;
-    border-bottom-right-radius: 2rem;
-  }
-  .trans{
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 100%;
-    height: 100%;
-    border-top-right-radius: 2rem;
-    
-  }
-  .tran {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: rgba(18, 94, 145, 0.514);
-    border-top-left-radius: 2rem;
-    border-bottom-left-radius: 2rem;
-    width: 100%;
-    height: 100%;
-  }
-  .info .tran{
-    background-color: rgba(18, 94, 145, 0.514);
-    border-bottom-right-radius: 2rem;
-    border-top-left-radius: 0rem;
-    border-bottom-left-radius: 0rem;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-  }
+.message {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.message svg {
+  display: inline-block;
+  fill: none;
+  margin-right: 5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.submitMessage .button-text span {
+  top: 8px;
+  transition: all 0.2s ease var(--d);
+}
+.submitMessage svg {
+  color: #5c86ff;
+  margin-left: -1px;
+  opacity: 0;
+  position: relative;
+  top: 30px;
+  transition: top 0.4s ease, opacity 0.3s linear;
+  width: 14px;
+}
+
+.loadingMessage {
+  opacity: 0;
+  transition: opacity 0.3s linear 0.3s,
+    top 0.4s cubic-bezier(0.22, 0, 0.41, -0.57);
+}
+.loadingMessage svg {
+  fill: #5c86ff;
+  margin: 0;
+  width: 22px;
+}
+
+.successMessage .button-text span {
+  left: 5px;
+  transition: all 0.2s ease var(--dr);
+}
+.successMessage svg {
+  color: #5cffa1;
+  stroke-dasharray: 20;
+  stroke-dashoffset: 20;
+  transition: stroke-dashoffset 0.3s ease-in-out;
+  width: 14px;
+}
+
+.loadingCircle:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.loadingCircle:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+/*  shivam part   */
+
+.grid-cont {
+  margin: 50px;
+  display: grid;
+  grid-template-areas: "photo data";
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  height: 80vh;
+  padding: 2rem;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.photo {
+  grid-area: photo;
+  background: url("image/thomas-kinto-6MsMKWzJWKc-unsplash.jpg");
+  background-size: cover;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.data {
+  grid-area: data;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+.photo2 {
+  background: url("image/national-cancer-institute-1c8sj2IO2I4-unsplash.jpg"); /* this will be the mama ki shop photo*/
+  background-size: cover;
+  border-top-right-radius: 2rem;
+}
+
+.info {
+  background: url("image/thomas-kinto-6MsMKWzJWKc-unsplash.jpg");
+  background-size: cover;
+  border-bottom-right-radius: 2rem;
+}
+.trans {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 2rem;
+}
+.tran {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(18, 94, 145, 0.514);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+}
+.tran:hover {
+  color: var(--hover);
+}
+.info .tran {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-bottom-right-radius: 2rem;
+  border-top-left-radius: 0rem;
+  border-bottom-left-radius: 0rem;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.tran:hover {
+  transform: scale(1.3);
+  color: rgb(172, 215, 255);
+}
+.info .tran:hover {
+  transform: scaleX(1.3);
+  color: white;
+}
+.trans:hover .tran {
+  transform: scale(1.3);
+}
