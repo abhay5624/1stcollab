@@ -368,4 +368,33 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   .loadingCircle:nth-child(3) {
     animation-delay: 0.2s;
   }
+  .grid-cont {
+    display: grid;
+    grid-template-areas: "photo data";
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    height: 80vh;
+    padding: 2rem;
+  }
+  .photo {
+    grid-area: photo;
+    background: url("images/thomas-kinto-6MsMKWzJWKc-unsplash.jpg"); 
+    background-size: cover;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+  }
   
+  .data {
+    grid-area: data;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+  }
+  .photo2 {
+    background: url("images/pexels-anna-shvets-3786157.jpg"); /* this will be the mama ki shop photo*/
+    background-size: cover;
+    border-top-right-radius: 2rem;
+  }
+  
+  .info {
+    background-color: turquoise;
+    border-bottom-right-radius: 2rem;
+  }
