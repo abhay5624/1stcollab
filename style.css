@@ -46,6 +46,16 @@ header .logo {
   width: 100px;
   order: 2;
 }
+.txtlogo{
+  position: absolute;
+  top: 0%;
+  left: 110px;
+  font-family: var(--fonts);
+  font-size: 20px;
+  color: white;
+  padding: 30px;
+  font-weight: 700;
+}
 header .onclass {
   width: 40%;
 }
@@ -441,6 +451,38 @@ button.complete .successMessage svg {
   transform: scaleX(1.3);
   color: white;
 }
-.trans:hover .tran {
-  transform: scale(1.3);
+.cpw{
+  width: 100%;
+  height: 600px;
+  background-color: var(--clr);
+}
+.about
+{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+footer{
+  margin-top: 100px;
+}
+.heading{
+  font-family: var(--fonts);
+  color: white;
+  font-size: 40px;
+  padding: 10px;
+  text-transform: capitalize;
+  font-weight: bolder;
+  text-align: center;
+}
+.dots{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.637);
+  margin: 2px;
 }
