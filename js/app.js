@@ -234,3 +234,4 @@ const button = document.getElementById('button');
 
 		// kick off the render loop
 		render();
+	

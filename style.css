@@ -11,6 +11,7 @@
 }
 body {
   overflow-x: hidden;
+  background-color: white;
 }
 header {
   position: absolute;
@@ -63,9 +64,22 @@ header .onclass {
   height: 100vh;
   width: 100%;
   background-color: rgb(100, 188, 247);
-  clip-path: polygon(0 0, 100% 0%, 93% 86%, 0% 100%);
+ 
   display: flex;
+  animation-name: heroanimate;
+  animation-duration: 1.4s;
+  animation-fill-mode: forwards;
 }
+/*animation to make heroimage motion*/
+@keyframes heroanimate {
+  0%{
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+  100%{
+    clip-path: polygon(0 0, 100% 0%, 93% 86%, 0% 100%);
+  }
+}
+
 .article {
   display: flex;
   justify-content: space-around;
@@ -219,10 +233,7 @@ header .onclass {
     cy: 10;
   }
 }
-body {
-  -webkit-font-smoothing: antialiased;
-  background-color: #f4f7ff;
-}
+
 
 canvas {
   height: 100vh;
@@ -485,4 +496,38 @@ footer{
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.637);
   margin: 2px;
+}
+.wersection{
+  display: flex;
+  margin: 10%;
+  width: 300%;
+  overflow-x: hidden;
+}
+.slide1 , .slide2, .slide3
+{
+  display: flex;
+  width: 80%;
+  height: 400px;
+}
+
+.img , .txt {
+  width: 40%;
+}
+.slide1 .img{
+background: url(image/mama.jpg);
+background-size: cover;
+
+}
+.slide1 .img .trans{
+  border-radius: 0px;
+  background-color: rgba(64, 224, 208, 0.151);
+}
+.slide1 .txt{
+padding: 20px;
+  background-image: url(image/pexels-anna-shvets-3786157.jpg);
+  background-size: cover;
+  font-size: 19px;
+}
+.slide1 .heading{
+  color: var(--hover);
 }
