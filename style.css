@@ -3,6 +3,14 @@
   --fonts: "Roboto Mono", monospace;
   --clr: #0099ff;
   --hover: rgb(5, 64, 141);
+  --grade:   background-image: linear-gradient(
+    to left,
+    #0099ff,
+    #2ca4fe,
+    #47affb,
+    #60b9f9,
+    #77c3f6
+  );
 }
 * {
   box-sizing: border-box;
@@ -12,6 +20,9 @@
 body {
   overflow-x: hidden;
   background-color: white;
+}
+main{
+  background: var(--grade);
 }
 header {
   position: absolute;
@@ -520,7 +531,7 @@ background-size: cover;
 }
 .slide1 .img .trans{
   border-radius: 0px;
-  background-color: rgba(64, 224, 208, 0.151);
+ 
 }
 .slide1 .txt{
 padding: 20px;
@@ -530,4 +541,41 @@ padding: 20px;
 }
 .slide1 .heading{
   color: var(--hover);
+}
+.opiningtimedetail{
+  padding: 20px;
+  display: flex;
+  margin: 100px;
+}
+.opentime{
+
+  color: black;
+  border: 2px solid #0099ff;
+  border-radius: 5px;
+
+}
+.opentime table{
+  padding: 10px;
+  text-transform: capitalize;
+  font-family: var(--fonts);
+  
+}
+.opentime table thead td{
+  text-align: center;
+  padding: 5px;
+}
+.opentime table tbody td{
+  padding: 9px;
+}
+.opentime::before{
+  content: "Opening";
+  font-family: var(--fonts);
+  display: block;
+  position: absolute;
+  top: 110%;
+  left: 7%;
+  background-color: white;
+  padding: 22px;
+  font-size: 20px;
+  font-weight: 700;
 }
