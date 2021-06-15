@@ -579,3 +579,28 @@ padding: 20px;
   font-size: 20px;
   font-weight: 700;
 }
+.emergencycall{
+  display: flex;
+  justify-content: center;
+  border: 2px solid rgb(122, 121, 121);
+  padding: 20px;
+  margin-left: 90px;
+  border-radius: 5px;
+  font-family: var(--fonts);
+  text-transform: capitalize;
+  align-items: center;
+
+}
+.emg{
+  color: var(--clr);
+  font-weight: 700;
+}
+.emergencycall::before{
+  content: "Emergency";
+  background: var(--grade);
+  font-family: var(--fonts);
+  display: block;
+  position: absolute;
+  top: 110%;
+
+}
