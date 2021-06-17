@@ -234,4 +234,34 @@ const button = document.getElementById('button');
 
 		// kick off the render loop
 		render();
+	// change header color on scrol
+	
+	const header = document.querySelector('header');
+	const logo = document.querySelector('.logo');
+	const txtlogo = document.querySelector('.txtlogo');
+	const headerchild = Array.from(header.children[1].children);
+	window.addEventListener('scroll', () => {
+		
+		if(pageYOffset>450){
+			logo.style.animationName = 'disappear';
+			header.style.animationName = 'backgroundcolorchange';
+			headerchild.forEach(child => {
+				child.style.color = "black";
+				child.style.fontFamily = 'cursive';
+			})
+			txtlogo.style.animationName = 'moveleft';
+			
+		}
+		else if(pageYOffset>600){
+			logo.style.animationName = 'appear';
+			header.style.animationName = 'reversebackground';
+			headerchild.forEach(child => {
+				child.style.color = "white";
+			
+			})
+			txtlogo.style.animationName = 'moveright'
+			
+		}
+	})
+	
 	
