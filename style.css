@@ -3,13 +3,22 @@
   --fonts: "Roboto Mono", monospace;
   --clr: #0099ff;
   --hover: rgb(5, 64, 141);
-  --grade:   background-image: linear-gradient(
+  --clr2: rgb(255, 255, 255);
+  --grade: linear-gradient(
     to left,
     #0099ff,
     #2ca4fe,
     #47affb,
     #60b9f9,
     #77c3f6
+  );
+  --grade2: linear-gradient(
+    to left top,
+    #7aedc5,
+    #00dcd9,
+    #00c8ed,
+    #00b0f9,
+    #0093f4
   );
 }
 * {
@@ -21,9 +30,7 @@ body {
   overflow-x: hidden;
   background-color: white;
 }
-main{
-  background: var(--grade);
-}
+
 header {
   position: absolute;
   top: 0%;
@@ -58,7 +65,7 @@ header .logo {
   width: 100px;
   order: 2;
 }
-.txtlogo{
+.txtlogo {
   position: absolute;
   top: 0%;
   left: 110px;
@@ -75,7 +82,7 @@ header .onclass {
   height: 100vh;
   width: 100%;
   background-color: rgb(100, 188, 247);
- 
+
   display: flex;
   animation-name: heroanimate;
   animation-duration: 1.4s;
@@ -83,10 +90,10 @@ header .onclass {
 }
 /*animation to make heroimage motion*/
 @keyframes heroanimate {
-  0%{
+  0% {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
   }
-  100%{
+  100% {
     clip-path: polygon(0 0, 100% 0%, 93% 86%, 0% 100%);
   }
 }
@@ -244,7 +251,6 @@ header .onclass {
     cy: 10;
   }
 }
-
 
 canvas {
   height: 100vh;
@@ -473,20 +479,19 @@ button.complete .successMessage svg {
   transform: scaleX(1.3);
   color: white;
 }
-.cpw{
+.cpw {
   width: 100%;
   height: 600px;
   background-color: var(--clr);
 }
-.about
-{
+.about {
   margin-top: 100px;
   margin-bottom: 100px;
 }
-footer{
+footer {
   margin-top: 100px;
 }
-.heading{
+.heading {
   font-family: var(--fonts);
   color: white;
   font-size: 40px;
@@ -495,79 +500,75 @@ footer{
   font-weight: bolder;
   text-align: center;
 }
-.dots{
+.dots {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.dot{
+.dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.637);
   margin: 2px;
 }
-.wersection{
+.wersection {
   display: flex;
   margin: 10%;
   width: 300%;
   overflow-x: hidden;
 }
-.slide1 , .slide2, .slide3
-{
+.slide1,
+.slide2,
+.slide3 {
   display: flex;
   width: 80%;
   height: 400px;
 }
 
-.img , .txt {
+.img,
+.txt {
   width: 40%;
 }
-.slide1 .img{
-background: url(image/mama.jpg);
-background-size: cover;
-
+.slide1 .img {
+  background: url(image/mama.jpg);
+  background-size: cover;
 }
-.slide1 .img .trans{
+.slide1 .img .trans {
   border-radius: 0px;
- 
 }
-.slide1 .txt{
-padding: 20px;
+.slide1 .txt {
+  padding: 20px;
   background-image: url(image/pexels-anna-shvets-3786157.jpg);
   background-size: cover;
   font-size: 19px;
 }
-.slide1 .heading{
+.slide1 .heading {
   color: var(--hover);
 }
-.opiningtimedetail{
+.opiningtimedetail {
   padding: 20px;
   display: flex;
   margin: 100px;
 }
-.opentime{
-
+.opentime {
   color: black;
   border: 2px solid #0099ff;
   border-radius: 5px;
-
 }
-.opentime table{
+.opentime table {
   padding: 10px;
   text-transform: capitalize;
   font-family: var(--fonts);
-  
 }
-.opentime table thead td{
+.opentime table thead td {
   text-align: center;
   padding: 5px;
 }
-.opentime table tbody td{
+.opentime table tbody td {
   padding: 9px;
 }
-.opentime::before{
+.opentime::before {
   content: "Opening";
   font-family: var(--fonts);
   display: block;
@@ -579,7 +580,7 @@ padding: 20px;
   font-size: 20px;
   font-weight: 700;
 }
-.emergencycall{
+.emergencycall {
   display: flex;
   justify-content: center;
   border: 2px solid rgb(122, 121, 121);
@@ -589,18 +590,87 @@ padding: 20px;
   font-family: var(--fonts);
   text-transform: capitalize;
   align-items: center;
-
 }
-.emg{
+.emg {
   color: var(--clr);
   font-weight: 700;
 }
-.emergencycall::before{
+.emergencycall::before {
   content: "Emergency";
-  background: var(--grade);
+  background-color: var(--clr);
   font-family: var(--fonts);
   display: block;
   position: absolute;
-  top: 110%;
+  top: 113%;
+  padding: 22px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  color: white;
+}
+.aboutus {
+  display: flex;
+  width: 80%;
+  margin: 10%;
 
+  background: var(--grade2);
+  box-shadow: 5px 7px 5px 0px rgba(138, 130, 130, 0.75);
+  -webkit-box-shadow: 5px 7px 5px 0px rgba(138, 130, 130, 0.75);
+  -moz-box-shadow: 5px 7px 5px 0px rgba(138, 130, 130, 0.75);
+  border-radius: 5px;
+}
+.container2 {
+  background: url(image/national-cancer-institute-1c8sj2IO2I4-unsplash.jpg);
+  background-size: cover;
+  background-position-x: center;
+  height: 500px;
+  width: 50%;
+  margin-right: 5%;
+  border-radius: 5px;
+}
+.container3 {
+  width: 50%;
+  padding: 20px;
+}
+.container3 h1 {
+  text-align: center;
+  margin: 5px;
+  font-family: var(--fonts);
+  font-size: 35px;
+}
+.container3 p {
+  font-weight: lighter;
+  font-family: monospace;
+  font-size: 18px;
+}
+.container3 h2 {
+  margin: 5px;
+  font-size: 20px;
+  font-family: var(--fonts);
+}
+.container2 .trans {
+  border-radius: 5px;
+}
+.line {
+  height: 4px;
+  background-color: var(--clr2);
+  border-radius: 2px;
+  margin: 5px;
+}
+.line1 {
+  width: 80%;
+}
+.line2 {
+  width: 90%;
+}
+.line3 {
+  width: 80%;
+}
+.foundername {
+  font-family: monospace;
+  color: var(--clr2);
+  font-size: 18px;
+  margin: 5px;
+  text-transform: capitalize;
+  font-weight: bold;
 }
