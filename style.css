@@ -702,6 +702,14 @@ footer {
     background-color: white;
   }
 }
+@keyframes backgroundcolorchange2 {
+  0%{
+    background-color: white;
+  }
+  100%{
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
 /*animation to make changeback header color*/
 @keyframes reversebackground {
   0%{

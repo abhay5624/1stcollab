@@ -241,26 +241,43 @@ const button = document.getElementById('button');
 	const txtlogo = document.querySelector('.txtlogo');
 	const headerchild = Array.from(header.children[1].children);
 	window.addEventListener('scroll', () => {
-		
-		if(pageYOffset>450){
+		console.log(pageYOffset)
+		if(pageYOffset<400){
+			logo.style.animationName = 'appear';
+			txtlogo.style.color = 'white'
+			header.style.animationName = 'reversebackground';
+			txtlogo.style.animationName = 'moveright';
+			headerchild.forEach(child => {
+				child.style.color = "white";
+				child.style.opacity = "1";
+			})
+		}
+		else if(pageYOffset>400 && pageYOffset<1000){
 			logo.style.animationName = 'disappear';
 			header.style.animationName = 'backgroundcolorchange';
+			txtlogo.style.animationName = 'moveleft';
+			txtlogo.style.opacity = '1'
 			headerchild.forEach(child => {
 				child.style.color = "black";
 				child.style.fontFamily = 'cursive';
+				child.style.opacity= "1";
 			})
-			txtlogo.style.animationName = 'moveleft';
-			
 		}
-		else if(pageYOffset>600){
-			logo.style.animationName = 'appear';
-			header.style.animationName = 'reversebackground';
+		
+		else if(pageYOffset>1000 && pageYOffset<1750)
+		{
+			header.style.animationName = 'backgroundcolorchange2';
+			txtlogo.style.animationName = '';
+			txtlogo.style.opacity = '0';
 			headerchild.forEach(child => {
-				child.style.color = "white";
+				child.style.opacity = "0";
 			
 			})
-			txtlogo.style.animationName = 'moveright'
-			
+		}
+		else  if(pageYOffset>1750){
+			txtlogo.style.opacity = '1';
+			console.log('its works');
+			txtlogo.style.color = 'white';
 		}
 	})
 	
