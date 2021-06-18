@@ -235,7 +235,9 @@ const button = document.getElementById('button');
 		// kick off the render loop
 		render();
 	// change header color on scrol
-	
+	const line1 = document.querySelector('.line1');
+	const line2 = document.querySelector('.line2');
+	const line3 = document.querySelector('.line3');
 	const header = document.querySelector('header');
 	const logo = document.querySelector('.logo');
 	const txtlogo = document.querySelector('.txtlogo');
@@ -256,7 +258,10 @@ const button = document.getElementById('button');
 			logo.style.animationName = 'disappear';
 			header.style.animationName = 'backgroundcolorchange';
 			txtlogo.style.animationName = 'moveleft';
-			txtlogo.style.opacity = '1'
+			txtlogo.style.opacity = '1';
+			line1.style.animationName = '';
+			line2.style.animationName = '';
+			line3.style.animationName = '';
 			headerchild.forEach(child => {
 				child.style.color = "black";
 				child.style.fontFamily = 'cursive';
@@ -267,6 +272,9 @@ const button = document.getElementById('button');
 		else if(pageYOffset>1000 && pageYOffset<1750)
 		{
 			header.style.animationName = 'backgroundcolorchange2';
+			line1.style.animationName = 'animateline1';
+			line2.style.animationName = 'animateline2';
+			line3.style.animationName = 'animateline3';
 			txtlogo.style.animationName = '';
 			txtlogo.style.opacity = '0';
 			headerchild.forEach(child => {
@@ -278,6 +286,9 @@ const button = document.getElementById('button');
 			txtlogo.style.opacity = '1';
 			console.log('its works');
 			txtlogo.style.color = 'white';
+			line1.style.animationName = '';
+			line2.style.animationName = '';
+			line3.style.animationName = '';
 		}
 	})
 	

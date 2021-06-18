@@ -621,6 +621,9 @@ footer {
   border-radius: 5px;
   color: white;
 }
+
+
+/*about us section*/
 .aboutus {
   display: flex;
   width: 80%;
@@ -669,15 +672,25 @@ footer {
   background-color: var(--clr2);
   border-radius: 2px;
   margin: 5px;
+
 }
 .line1 {
   width: 80%;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 .line2 {
   width: 90%;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 .line3 {
   width: 80%;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 .foundername {
   font-family: monospace;
@@ -688,7 +701,7 @@ footer {
   font-weight: bold;
 }
 
-
+/*iteam list*/
 
 /*keyframs*/
 
@@ -766,5 +779,30 @@ footer {
   }
   100% {
     clip-path: polygon(0 0, 100% 0%, 93% 86%, 0% 100%);
+  }
+}
+/*animation to increase line width*/
+@keyframes animateline1 {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 80%;
+  }
+}
+@keyframes animateline2 {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 90%;
+  }
+}
+@keyframes animateline3 {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 80%;
   }
 }
