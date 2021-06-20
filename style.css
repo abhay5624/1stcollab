@@ -130,6 +130,7 @@ header .onclass {
  
 }
 .medicinesvg img{
+  margin-top: 50px;
   width: 80%;
 }
 .copywrite {
@@ -646,10 +647,10 @@ footer {
   border-radius: 5px;
 }
 .container2 {
-  background: url(image/national-cancer-institute-1c8sj2IO2I4-unsplash.jpg);
+  background: url(image/nts.jpg);
   background-size: cover;
   background-position-x: center;
-  height: 500px;
+  height: 600px;
   width: 50%;
   margin-right: 5%;
   border-radius: 5px;
@@ -665,9 +666,8 @@ footer {
   font-size: 35px;
 }
 .container3 p {
-  font-weight: lighter;
-  font-family: monospace;
-  font-size: 18px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
 }
 .container3 h2 {
   margin: 5px;
@@ -704,17 +704,23 @@ footer {
 }
 .foundername {
   font-family: monospace;
-  color: var(--clr2);
-  font-size: 18px;
+  color: rgb(0, 105, 153);
+  font-size: 20px;
   margin: 5px;
   text-transform: capitalize;
   font-weight: bold;
 }
 .centertxt{
+  background-color: white;
+
+  width: 100%;
   text-align: center;
   text-transform: capitalize;
   font-size: xx-large;
-  margin: 40px;
+ padding: 20px;
+ margin-bottom: 40px;
+ z-index: 99;
+
 }
 /*iteam list*/
 .items {
@@ -722,16 +728,29 @@ footer {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-
 }
 .item{
   width: 29%;
   margin: 20px;
-
   height: 200px;
   border-radius: 5px;
+  transform: rotateY(90deg);
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 
+.item:hover{
+  transform: scale(1.5);
+}
+.container3 .flex{
+  margin: 0%;
+  justify-content: space-between;
+}
+.percent{
+  color: white;
+  font-size: larger;
+}
 .nastle{
   background: url(image/Nestlé.svg);
   background-repeat: no-repeat;
@@ -915,6 +934,16 @@ footer {
     width: 0%;
   }
   100%{
-    width: 80%;
+    width: 75%;
   }
+}
+/*animation to rotate item*/
+@keyframes rotate {
+  0%{
+    transform: rotateY(90deg);
+  }
+  100%{
+    transform: rotateY(0deg);
+  }
+  
 }
