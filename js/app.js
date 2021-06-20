@@ -272,9 +272,7 @@ const button = document.getElementById('button');
 		else if(pageYOffset>1000 && pageYOffset<1750)
 		{
 			header.style.animationName = 'backgroundcolorchange2';
-			line1.style.animationName = 'animateline1';
-			line2.style.animationName = 'animateline2';
-			line3.style.animationName = 'animateline3';
+			
 			txtlogo.style.animationName = '';
 			txtlogo.style.opacity = '0';
 			headerchild.forEach(child => {
@@ -282,13 +280,18 @@ const button = document.getElementById('button');
 			
 			})
 		}
-		else  if(pageYOffset>1750){
+		else  if(pageYOffset>1750 && pageYOffset<2525){
 			txtlogo.style.opacity = '1';
 			console.log('its works');
 			txtlogo.style.color = 'white';
 			line1.style.animationName = '';
 			line2.style.animationName = '';
 			line3.style.animationName = '';
+		}
+		else if(pageYOffset>2525){
+			line1.style.animationName = 'animateline1';
+			line2.style.animationName = 'animateline2';
+			line3.style.animationName = 'animateline3';
 		}
 	})
 	

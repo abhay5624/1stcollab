@@ -121,12 +121,16 @@ header .onclass {
 .article .content {
   width: 90%;
   text-transform: capitalize;
-  font-size: 40px;
+  font-size: 45px;
   text-align: center;
   margin-left: 10%;
 }
 .medicinesvg {
   width: 50%;
+ 
+}
+.medicinesvg img{
+  width: 80%;
 }
 .copywrite {
   background-color: #0099ff;
@@ -559,10 +563,16 @@ footer {
 .slide1 .heading {
   color: var(--hover);
 }
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 50px;
+}
 .opiningtimedetail {
   padding: 20px;
   display: flex;
-  margin: 100px;
+  margin: auto;
 }
 .opentime {
   color: black;
@@ -586,8 +596,8 @@ footer {
   font-family: var(--fonts);
   display: block;
   position: absolute;
-  top: 110%;
-  left: 7%;
+  top: 104%;
+  left: 23%;
   background-color: white;
   padding: 22px;
   font-size: 20px;
@@ -614,7 +624,7 @@ footer {
   font-family: var(--fonts);
   display: block;
   position: absolute;
-  top: 113%;
+  top: 107%;
   padding: 22px;
   font-size: 20px;
   font-weight: 700;
@@ -700,9 +710,111 @@ footer {
   text-transform: capitalize;
   font-weight: bold;
 }
-
+.centertxt{
+  text-align: center;
+  text-transform: capitalize;
+  font-size: xx-large;
+  margin: 40px;
+}
 /*iteam list*/
+.items {
+  width: 78%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
 
+}
+.item{
+  width: 29%;
+  margin: 20px;
+
+  height: 200px;
+  border-radius: 5px;
+}
+
+.nastle{
+  background: url(image/Nestlé.svg);
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+.hamdaed{
+  background: url(image/hamdard\ image.png);
+  background-repeat: no-repeat;
+  
+}
+.zandu{
+  background: url(image/262874.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.dabur
+{
+  background: url(image/dabur.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.patanjali{
+  background: url(image/Patanjali_Logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+.hindustan{
+  background: url(image/1200px-Hindustan_Unilever_Logo.svg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.pg{
+  background: url(image/p&g.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.joy{
+  background: url(image/joy.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.naturs{
+  background: url(image/natures.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.emami{
+  background: url(image/emami.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.keokarpin{
+  background: url(image/keo.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.garnier{
+  background: url(image/garnier-logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.lotus{
+  background: url(image/lotus.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.heinz{
+  background: url(image/heinz-1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.herbal{
+  background: url(image/herbal.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.mamypokopant
+{
+  background: url(image/13-Mamypoko.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 /*keyframs*/
 
 
