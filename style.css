@@ -960,6 +960,9 @@ footer {
 }
 @media only screen and (max-width: 600px)
 {
+  .container3{
+    width: 100%;
+  }
   .homeimage{
     flex-direction: column;
     height: 100vh;
@@ -1005,7 +1008,7 @@ footer {
     transform: translateX(-60%);
   }
   .container2{
-    height: 690px;
+    display: none;
   }
   .form{
     margin-top: 20vh;
