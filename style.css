@@ -885,10 +885,12 @@ footer {
 /*animation to make txtlogo move left*/
 @keyframes moveleft {
   0%{
+  
     color: white;
     left: 110px;
   }
   100%{
+    background-color: white;
     color: black;
     left: 20px;
   }
@@ -946,4 +948,70 @@ footer {
     transform: rotateY(0deg);
   }
   
+}
+@keyframes svgentry {
+  0%{
+    margin-left: 1000px;
+  }
+  100%{
+    margin-left: 229px;
+  }
+  
+}
+@media only screen and (max-width: 600px)
+{
+  .homeimage{
+    flex-direction: column;
+    height: 100vh;
+  }
+  .medicinesvg img{
+    order: 1;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 229px;
+    animation-name: svgentry;
+    animation-duration: 1.4s;
+  animation-fill-mode: forwards;
+  }
+  .opiningtimedetail{
+    flex-direction: column;
+  }
+  .emergencycall{
+    display: none;
+  }
+  .emergencycall::before{
+    display: none;
+  }
+  .article{
+    order: 2;
+    width:80%;
+  }
+  .link {
+    display: none;
+  }
+  .logo{
+    left: 0%;
+  }
+  .txtlogo{
+    width: 100%;
+    z-index: 99;
+  }
+  .item{
+    width: 80%;
+    margin-left: 10%;
+  }
+  .phonemedia{
+    width: 210%;
+    transform: translateX(-60%);
+  }
+  .container2{
+    height: 690px;
+  }
+  .form{
+    margin-top: 20vh;
+  }
+  .grid-cont {
+    margin: 30px;
+    height: 60vh;
+}
 }
