@@ -1000,8 +1000,16 @@ footer {
     left: 0%;
   }
   .txtlogo{
+    padding: 10px;
     width: 100%;
     z-index: 99;
+  }
+  .items{
+    width: 100%;
+  }
+  .aboutus{
+    width: 90%;
+    margin-left: 5%;
   }
   .item{
     width: 80%;
