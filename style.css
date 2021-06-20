@@ -963,10 +963,13 @@ footer {
   .container3{
     width: 100%;
   }
+  header{
+    width: 100vw;
+  }
   .homeimage{
     flex-direction: column;
-    height: 100vh; 
-    width: 100%;
+    height: 100vw; 
+    width: 100vh;
   }
   .medicinesvg img{
     order: 1;
