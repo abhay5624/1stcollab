@@ -960,6 +960,9 @@ footer {
 }
 @media only screen and (max-width: 600px)
 {
+  body{
+    width: 100%;
+  }
   .container3{
     width: 100%;
   }
@@ -983,6 +986,9 @@ footer {
   .opiningtimedetail{
     flex-direction: column;
   }
+  .opentime:before{
+    top: 95%;
+  }
   .emergencycall{
     display: none;
   }
@@ -1000,12 +1006,14 @@ footer {
     left: 0%;
   }
   .txtlogo{
+    
     padding: 10px;
+    padding-top: 15px;
     width: 100%;
     z-index: 99;
   }
   .items{
-    width: 100%;
+    width: 200%;
   }
   .aboutus{
     width: 90%;
