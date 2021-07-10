@@ -276,9 +276,10 @@ const items = document.querySelector(".items");
 const item = Array.from(items.children);
 
 console.log(item);
-
+if(screen.width>500){
+  console.log("its dont work");
 window.addEventListener("scroll", () => {
-  console.log(pageYOffset);
+ 
   if (pageYOffset < 400) {
     partner.style.position = 'relative';
     logo.style.animationName = "appear";
@@ -350,3 +351,4 @@ window.addEventListener("scroll", () => {
     line3.style.animationName = "animateline3";
   }
 });
+}

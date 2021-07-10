@@ -38,7 +38,7 @@ body {
 }
 
 header {
- 
+ overflow: hidden;
   position: fixed;
   top: 0%;
   z-index: 99;
@@ -61,7 +61,7 @@ header .link {
 header .link a {
   text-decoration: none;
   font-family: 'Dancing Script', cursive;
-  padding: 59px;
+  padding: 30px;
   color: white;
   font-weight: 600;
   font-size: 17px;
@@ -176,7 +176,7 @@ header .onclass {
   font-size: 20px;
   margin-left: 100px;
   
-  width: 50%;
+  width: max-content;
 }
 .formcont {
   margin: 15px;
@@ -650,7 +650,7 @@ footer {
   background: url(image/nts.jpg);
   background-size: cover;
   background-position-x: center;
-  height: 600px;
+  
   width: 50%;
   margin-right: 5%;
   border-radius: 5px;
@@ -731,7 +731,7 @@ footer {
 }
 .item{
   width: 29%;
-  margin: 20px;
+  margin: 10px;
   height: 200px;
   border-radius: 5px;
   transform: rotateY(90deg);
