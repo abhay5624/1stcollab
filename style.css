@@ -1018,6 +1018,7 @@ footer {
     z-index: 99;
   }
   .items{
+    margin-left: 10%;
     justify-content: center;
     align-items: center;
     width: 120%;
@@ -1038,11 +1039,23 @@ footer {
   }
   .form{
     margin-top: 20vh;
+    overflow-y: hidden;
+    width: 150%;
+    flex-direction: column;
+  }
+  .box{
+    flex-direction: row;
+  }
+  .contact{
+    margin-right: 100px;
   }
   .grid-cont {
     overflow-x: unset;
     margin: 30px;
     height: max-content;
     width: 100%;
+}
+footer {
+  width: 150%;
 }
 }
