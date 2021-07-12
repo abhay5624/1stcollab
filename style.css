@@ -963,11 +963,16 @@ footer {
   body{
     width: 100%;
   }
+  .location{
+    overflow-y: scroll;
+    width: 120%;
+  }
   .container3{
     width: 100%;
   }
   header{
     width: 100vw;
+    overflow: unset;
   }
   .homeimage{
     flex-direction: column;
@@ -1016,12 +1021,13 @@ footer {
     width: 200%;
   }
   .aboutus{
-    width: 90%;
+    width: 140%;
     margin-left: 5%;
   }
   .item{
-    width: 80%;
-    margin-left: 10%;
+    margin: 10px;
+  height: 200px;
+    
   }
   
   .container2{
@@ -1031,7 +1037,9 @@ footer {
     margin-top: 20vh;
   }
   .grid-cont {
+    overflow-x: unset;
     margin: 30px;
-    height: 60vh;
+    height: max-content;
+    width: 100%;
 }
 }

@@ -263,92 +263,197 @@ textElements.forEach((element) => {
 
 // kick off the render loop
 render();
-// change header color on scrol
-const partner = document.querySelector('.ttt');
+
+
+// declaring Dom Element
+
+
+//our partner text
+const partner = document.querySelector(".ttt");
+//about us 1st line 
 const line1 = document.querySelector(".line1");
+//about us 2nd line
 const line2 = document.querySelector(".line2");
+//about us 3rd line
 const line3 = document.querySelector(".line3");
+//its header of web
 const header = document.querySelector("header");
+//its image logo
 const logo = document.querySelector(".logo");
+//its text logo
 const txtlogo = document.querySelector(".txtlogo");
+//its header child like link of home anout etc
 const headerchild = Array.from(header.children[1].children);
+//its iteams section means the area where item is declared
 const items = document.querySelector(".items");
+// its arrary of single item in item section
 const item = Array.from(items.children);
 
-console.log(item);
-if(screen.width>500){
-  console.log("its dont work");
-window.addEventListener("scroll", () => {
- 
-  if (pageYOffset < 400) {
-    partner.style.position = 'relative';
-    logo.style.animationName = "appear";
-    txtlogo.style.color = "white";
-    header.style.animationName = "reversebackground";
-    txtlogo.style.animationName = "moveright";
-    headerchild.forEach((child) => {
-      child.style.color = "white";
-      child.style.opacity = "1";
-    });
-  } else if (pageYOffset > 400 && pageYOffset < 1000) {
-    if (pageYOffset > 500) {
-		let delay = 0;
-      item.forEach(product => {
-        console.log("its works");
-        product.style.animationName = "rotate";
-		product.style.animationDelay = `${delay}s`;
-		delay = delay + 0.3;
-      });
-    }
-    if(pageYOffset > 900){
-      console.log(partner);
-      partner.style.position = 'fixed';
-      partner.style.top = '55px';
-      partner.style.zindex = '88';
-      partner.style.textAlign = 'center';
-    }
-    logo.style.animationName = "disappear";
-    header.style.animationName = "backgroundcolorchange";
-    txtlogo.style.animationName = "moveleft";
-    txtlogo.style.opacity = "1";
-    line1.style.animationName = "";
-    line2.style.animationName = "";
-    line3.style.animationName = "";
-    headerchild.forEach((child) => {
-      child.style.color = "black";
-      child.style.fontFamily = "cursive";
-      child.style.opacity = "1";
-    });
-	
-  } else if (pageYOffset > 1000 && pageYOffset < 1750) {
-	item.forEach(product => {
-        console.log("its works");
-        product.style.animationName = "rotate";
-		product.style.animationDelay = `${delay}s`;
-		delay = delay + 0.3;
-      });
-    header.style.animationName = "backgroundcolorchange2";
 
-    txtlogo.style.animationName = "";
-    txtlogo.style.opacity = "0";
-    headerchild.forEach((child) => {
-      child.style.opacity = "0";
-    });
-  } else if (pageYOffset > 1750 && pageYOffset < 2525) {
-    if (pageYOffset == 2000) {
-      partner.style.position = 'relative';
-      
+// adding animation on scroll
+
+function screenanimation() {
+
+  //this if for checking screen width 
+
+
+  // adding scroll animation for pc
+
+
+if (screen.width > 500) {
+// Eventlistenener for scroll action
+
+
+
+  window.addEventListener("scroll", () => {
+
+
+    //animation if scroll less  than 400
+    if (pageYOffset < 400) {
+      partner.style.position = "relative";
+      logo.style.animationName = "appear";
+      txtlogo.style.color = "white";
+      header.style.animationName = "reversebackground";
+      txtlogo.style.animationName = "moveright";
+      headerchild.forEach((child) => {
+        child.style.color = "white";
+        child.style.opacity = "1";
+      });
     }
-    txtlogo.style.opacity = "1";
-    console.log("its works");
-    txtlogo.style.color = "white";
-    line1.style.animationName = "";
-    line2.style.animationName = "";
-    line3.style.animationName = "";
-  } else if (pageYOffset > 2525) {
-    line1.style.animationName = "animateline1";
-    line2.style.animationName = "animateline2";
-    line3.style.animationName = "animateline3";
-  }
-});
+
+
+    // if scroll more than 400 and less than 1000
+
+
+
+     else if (pageYOffset > 400 && pageYOffset < 1000) {
+      if (pageYOffset > 500) {
+        let delay = 0;
+        partner.style.position = "relative";
+        item.forEach((product) => {
+          console.log("its works");
+          product.style.animationName = "rotate";
+          product.style.animationDelay = `${delay}s`;
+          delay = delay + 0.3;
+        });
+      }
+      if (pageYOffset > 900) {
+        console.log(partner);
+        partner.style.position = "fixed";
+        partner.style.top = "55px";
+        partner.style.zindex = "88";
+        partner.style.textAlign = "center";
+      }
+      logo.style.animationName = "disappear";
+      header.style.animationName = "backgroundcolorchange";
+      txtlogo.style.animationName = "moveleft";
+      txtlogo.style.opacity = "1";
+      line1.style.animationName = "";
+      line2.style.animationName = "";
+      line3.style.animationName = "";
+      headerchild.forEach((child) => {
+        child.style.color = "black";
+        child.style.fontFamily = "cursive";
+        child.style.opacity = "1";
+      });
+    }
+    
+    
+    else if (pageYOffset > 1000 && pageYOffset < 1750) {
+      item.forEach((product) => {
+        console.log("its works");
+        product.style.animationName = "rotate";
+        product.style.animationDelay = `${delay}s`;
+        delay = delay + 0.3;
+      });
+      partner.style.position = "relative";
+      header.style.animationName = "backgroundcolorchange2";
+      txtlogo.style.animationName = "";
+      txtlogo.style.opacity = "0";
+      headerchild.forEach((child) => {
+        child.style.opacity = "0";
+      });
+    } else if (pageYOffset > 1750 && pageYOffset < 2525) {
+      if (pageYOffset == 2000) {
+        partner.style.position = "relative";
+      }
+      txtlogo.style.opacity = "1";
+      console.log("its works");
+      txtlogo.style.color = "white";
+      line1.style.animationName = "";
+      line2.style.animationName = "";
+      line3.style.animationName = "";
+    } else if (pageYOffset > 2525) {
+      line1.style.animationName = "animateline1";
+      line2.style.animationName = "animateline2";
+      line3.style.animationName = "animateline3";
+    }
+  });
 }
+
+
+// for mobile view
+else{
+  window.addEventListener("scroll", () => {
+
+
+console.log(pageYOffset);
+
+
+
+    //animation if scroll less  than 400
+    if (pageYOffset < 400) {
+      partner.style.position = "relative";
+      logo.style.animationName = "appear";
+      txtlogo.style.color = "white";
+      header.style.animationName = "reversebackground";
+      txtlogo.style.animationName = "moveright";
+      headerchild.forEach((child) => {
+        child.style.color = "white";
+        child.style.opacity = "1";
+      });
+    }
+
+
+    // if scroll more than 400 and less than 1000
+
+
+
+     else if (pageYOffset > 400 && pageYOffset < 1000) {
+      if (pageYOffset > 500) {
+        partner.style.position = "relative";
+        let delay = 0;
+       
+        item.forEach((product) => {
+          console.log("its works");
+          product.style.animationName = "rotate";
+          product.style.animationDelay = `${delay}s`;
+          delay = delay + 0.3;
+        });
+      }
+     
+      logo.style.animationName = "disappear";
+      header.style.animationName = "backgroundcolorchange";
+      txtlogo.style.animationName = "moveleft";
+      txtlogo.style.opacity = "1";
+      line1.style.animationName = "";
+      line2.style.animationName = "";
+      line3.style.animationName = "";
+      headerchild.forEach((child) => {
+        child.style.color = "black";
+        child.style.fontFamily = "cursive";
+        child.style.opacity = "1";
+      });
+    }
+// if get scroll more than 2400
+else if (pageYOffset > 2400) {
+  txtlogo.style.color = `white`
+  partner.style.position = "relative";
+ }
+
+  })
+
+}
+
+}
+screenanimation();
