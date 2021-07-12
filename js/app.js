@@ -420,7 +420,7 @@ console.log(pageYOffset);
 
 
      else if (pageYOffset > 400 && pageYOffset < 1000) {
-      if (pageYOffset > 500) {
+      if (pageYOffset > 400) {
         partner.style.position = "relative";
         let delay = 0;
        

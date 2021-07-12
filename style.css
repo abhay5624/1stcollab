@@ -965,7 +965,7 @@ footer {
   }
   .location{
     overflow-y: scroll;
-    width: 120%;
+    width: 146%;
   }
   .container3{
     width: 100%;
@@ -1018,17 +1018,18 @@ footer {
     z-index: 99;
   }
   .items{
-    width: 200%;
+    width: 120%;
+    height: fit-content;
   }
   .aboutus{
     width: 140%;
     margin-left: 5%;
   }
-  .item{
+  .item {
     margin: 10px;
-  height: 200px;
-    
-  }
+    height: 200px;
+    width: 210px;
+}
   
   .container2{
     display: none;
