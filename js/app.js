@@ -288,9 +288,30 @@ const headerchild = Array.from(header.children[1].children);
 const items = document.querySelector(".items");
 // its arrary of single item in item section
 const item = Array.from(items.children);
-
+// contact us section
+const contactUs = document.querySelector(`.form`);
 
 // adding animation on scroll
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function screenanimation() {
 
@@ -326,8 +347,10 @@ if (screen.width > 500) {
 
 
 
-     else if (pageYOffset > 400 && pageYOffset < 1000) {
-      if (pageYOffset > 500) {
+     else if (pageYOffset > 400 && pageYOffset < 1000)
+      {
+      if (pageYOffset > 500) 
+      {
         let delay = 0;
         partner.style.position = "relative";
         item.forEach((product) => {
@@ -337,7 +360,8 @@ if (screen.width > 500) {
           delay = delay + 0.3;
         });
       }
-      if (pageYOffset > 900) {
+      if (pageYOffset > 900) 
+      {
         console.log(partner);
         partner.style.position = "fixed";
         partner.style.top = "55px";
@@ -359,8 +383,10 @@ if (screen.width > 500) {
     }
     
     
-    else if (pageYOffset > 1000 && pageYOffset < 1750) {
-      item.forEach((product) => {
+    else if (pageYOffset > 1000 && pageYOffset < 1750)
+     {
+      item.forEach((product) => 
+      {
         console.log("its works");
         product.style.animationName = "rotate";
         product.style.animationDelay = `${delay}s`;
@@ -373,8 +399,10 @@ if (screen.width > 500) {
       headerchild.forEach((child) => {
         child.style.opacity = "0";
       });
-    } else if (pageYOffset > 1750 && pageYOffset < 2525) {
-      if (pageYOffset == 2000) {
+    } else if (pageYOffset > 1750 && pageYOffset < 2525)
+     {
+      if (pageYOffset == 2000) 
+      {
         partner.style.position = "relative";
       }
       txtlogo.style.opacity = "1";
@@ -393,14 +421,10 @@ if (screen.width > 500) {
 
 
 // for mobile view
-else{
+else
+{
+  contactUs.style.width = `${screen.width}`;
   window.addEventListener("scroll", () => {
-
-
-console.log(pageYOffset);
-
-
-
     //animation if scroll less  than 400
     if (pageYOffset < 400) {
       partner.style.position = "relative";

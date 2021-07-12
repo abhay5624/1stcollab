@@ -1018,6 +1018,8 @@ footer {
     z-index: 99;
   }
   .items{
+    justify-content: center;
+    align-items: center;
     width: 120%;
     height: fit-content;
   }
